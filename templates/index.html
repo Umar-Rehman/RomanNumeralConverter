@@ -1,0 +1,11 @@
+<form method="POST">
+    <input type="radio" id="roman" name="conversionType" value="roman">
+    <label for="roman">To Arabic Numbers</label>
+    <input type="radio" id="arabic" name="conversionType" value="arabic">
+    <label for="arabic">To Roman Numerals</label>
+    <input type="text" name="value" class="form-control" id="value" placeholder="Pssst... Over here!">
+    <button>Convert!</button>
+</form>
+{% if output %}
+  <h1>{{ output }}!</h1>
+{% endif %}
